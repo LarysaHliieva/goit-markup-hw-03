@@ -125,6 +125,8 @@ body {
 }
 
 .title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -217,6 +219,10 @@ body {
 }
 
 /* =========================== FEATURES =========================== */
+.features-section {
+  padding-bottom: 0;
+}
+
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -244,29 +250,62 @@ body {
 }
 
 /* =========================== WHAT WE DO =========================== */
+.directions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--item-set-gap);
+}
+
+.direction {
+  flex-basis: calc((100% - 2 * var(--item-set-gap)) / 3);
+}
 
 /* =========================== ABOUT =========================== */
 .about {
   background-color: var(--secondary-bg-color);
 }
 
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .team-item {
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
+  flex-basis: calc((100% - 3 * var(--item-set-gap)) / 4);
+
+  border-radius: 0px 0px 4px 4px;
 
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team .name {
+.team-item:not(:nth-child(4n)) {
+  margin-right: var(--item-set-gap);
+}
+
+.team-item:not(:nth-last-child(-n + 4)) {
+  margin-bottom: var(--item-set-gap);
+}
+
+.team .content-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team .name {
+  margin-bottom: 10px;
+
   font-weight: 500;
 }
 
 .team .position {
-  font-size: 16px;
   color: var(--secondary-text-color);
 }
 
