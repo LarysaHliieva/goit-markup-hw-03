@@ -1,0 +1,220 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-text-color-theme-dark: #ffffff;
+  --secondary-text-color-theme-dark: rgba(255, 255, 255, 0.6);
+  --text-color-black: #000000;
+  --accent-color: #2196f3;
+
+  --background-color: #ffffff;
+  --background-color-theme-dark: #2f303a;
+  --background-color-accent: #f5f4fa;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 14px;
+
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* =========================== COMPONENTS =========================== */
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: inherit;
+}
+
+.logo .accent {
+  color: var(--accent-color);
+}
+
+.btn {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* =========================== HEADER =========================== */
+
+.menu-link,
+.auth-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu-link {
+  color: var(--primary-text-color);
+}
+
+.auth-link {
+  color: var(--secondary-text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.auth-link:hover,
+.auth-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+/* =========================== HERO =========================== */
+
+.hero {
+  text-align: center;
+  background-color: var(--background-color-theme-dark);
+}
+
+.page-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color-theme-dark);
+}
+
+/* =========================== FEATURES =========================== */
+.features .subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features .description {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+/* =========================== WHAT WE DO =========================== */
+
+/* =========================== ABOUT =========================== */
+.about {
+  background-color: var(--background-color-accent);
+}
+
+.team-item {
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team .name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.team .position {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+}
+
+/* =========================== FOOTER =========================== */
+
+.page-footer {
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--background-color-theme-dark);
+}
+
+.adress-list {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  color: inherit;
+}
+
+.contact {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.address:hover,
+.address:focus,
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+
+/* =========================== OUR WORKS ===========================*/
+
+.filter-btn {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+  background-color: var(--background-color-accent);
+
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--accent-color);
+}
+
+.gallery .caption {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery .category {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
