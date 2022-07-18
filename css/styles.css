@@ -86,10 +86,17 @@ body {
 }
 
 .btn {
-  font-family: var(--primary-font);
+  min-width: 160px;
+  padding: 10px 32px;
+
+  border: none;
+  border-radius: 4px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
 
   color: var(--white-color);
   background-color: var(--accent-color);
@@ -163,11 +170,18 @@ body {
 /* =========================== HERO =========================== */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--bg-color-theme-dark);
 }
 
 .page-title {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
