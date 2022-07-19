@@ -89,21 +89,17 @@ body {
 /* =========================== COMPONENTS =========================== */
 
 .logo {
+  display: inline-block;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
 
+.accent {
   color: var(--accent-color);
-}
-
-.header-logo {
-  color: var(--black-color);
-}
-
-.footer-logo {
-  color: var(--white-color);
 }
 
 .btn {
@@ -152,11 +148,12 @@ body {
   align-items: center;
 }
 
-.page-nav > .logo {
-  display: inline-block;
+.header-logo {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 93px;
+
+  color: var(--black-color);
 }
 
 .menu-item:not(:last-child),
@@ -312,8 +309,16 @@ body {
 /* =========================== FOOTER =========================== */
 
 .page-footer {
-  color: var(--white-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--bg-color-theme-dark);
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+
+  color: var(--white-color);
 }
 
 .adress-list {
@@ -322,8 +327,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address {
-  color: inherit;
+  color: var(--white-color);
 }
 
 .contact {
